@@ -2,7 +2,7 @@
 
 
 is_web-api_alive() {
-	( docker ps | grep assembly_web-api_1 ) 
+	( docker ps | grep assembly_web-api_1 )  > /dev/null
 }
 
 
