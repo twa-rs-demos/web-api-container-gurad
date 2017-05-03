@@ -2,8 +2,7 @@
 
 
 is_web-api_alive() {
-	[[ 1 = $( docker ps | grep assembly_web-api_1  | wc -l) ]] && return 0
-	return 1;
+	( docker ps | grep assembly_web-api_1 ) 
 }
 
 
